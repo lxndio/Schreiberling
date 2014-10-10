@@ -16,3 +16,8 @@ All features of Schreiberling in one list:
 Yes - it is not more. But ask yourself: Do you really need more? We do not and that's what Schreiberling is: All you need.
 
 ![Screenshot of Schreiberling](http://abload.de/img/screenshotdtylr.png)
+
+## Technical stuff
+
+Schreiberling is in an early alpha stage. It may not work 100% correctly, it may crash and it may damage files. I am NOT liable for any damages that may occur as it is written in the license that comes with Schreiberlin.
+You are free to download it and to test it. I thank you for every bug and issue you report.
