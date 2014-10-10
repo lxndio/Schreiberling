@@ -19,5 +19,5 @@ Yes - it is not more. But ask yourself: Do you really need more? We do not and t
 
 ## Technical stuff
 
-Schreiberling is in an early alpha stage. It may not work 100% correctly, it may crash and it may damage files. I am NOT liable for any damages that may occur as it is written in the license that comes with Schreiberlin.
+Schreiberling is in an early alpha stage. It may not work 100% correctly, it may crash and it may damage files. I am NOT liable for any damages that may occur as it is written in the license that comes with Schreiberling.
 You are free to download it and to test it. I thank you for every bug and issue you report.
