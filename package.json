@@ -1,0 +1,11 @@
+{
+  "name": "Schreiberling",
+  "description": "A clean markdown editor.",
+  "version": "0.1.0",
+  "main": "index.html",
+  "window": {
+    "toolbar": false,
+    "width": 1320,
+    "height": 750
+  }
+}

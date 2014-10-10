@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Schreiberling</title>
+        
+        <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <script src="marked.js"></script>
+        <script src="highlight.pack.js"></script>
+        <script src="codemirror-compressed.js"></script>
+        
+        <script src="zepto.min.js"></script>
+        <script src="editor.js"></script>
+    </head>
+    <body>
+        <div id="menubar">
+            <button id="btn-newFile" class="menubar-button">N</button>
+            <button id="btn-openFile" class="menubar-button">O</button>
+            <button id="btn-saveFile" class="menubar-button">S</button>
+            &emsp;&emsp;
+            <button id="btn-bold" class="menubar-button">B</button>
+            <button id="btn-italic" class="menubar-button">I</button>
+            <button id="btn-underline" class="menubar-button">U</button>
+            &emsp;&emsp;
+            <button id="btn-settings" class="menubar-button">S</button>
+            <button id="btn-about" class="menubar-button">A</button>
+            
+            <input style="display:none;" id="dialog-openFile" type="file" accept=".md">
+            <input style="display:none;" id="dialog-saveFile" type="file" accept=".md" nwsaveas="New Document.md">
+        </div>
+        <div id="in">
+        </div>
+        <div id="out">
+        </div>
+    </body>
+</html>
