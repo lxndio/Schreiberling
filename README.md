@@ -15,7 +15,7 @@ All features of Schreiberling in one list:
 
 Yes - it is not more. But ask yourself: Do you really need more? We do not and that's what Schreiberling is: All you need.
 
-![Screenshot of Schreiberling](http://abload.de/img/screenshotdtylr.png)
+![Screenshot of Schreiberling](http://www.lxnd.me/SchreiberlingScreenshot.png)
 
 ## Technical stuff
 
