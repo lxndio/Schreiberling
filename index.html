@@ -7,28 +7,30 @@
         <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="css/main.css">
         
-        <script src="marked.js"></script>
-        <script src="highlight.pack.js"></script>
-        <script src="codemirror-compressed.js"></script>
+        <script src="js/marked.js"></script>
+        <script src="js/highlight.pack.js"></script>
+        <script src="js/codemirror-compressed.js"></script>
         
-        <script src="zepto.min.js"></script>
-        <script src="editor.js"></script>
+        <script src="js/zepto.min.js"></script>
+        <script src="js/editor.js"></script>
     </head>
     <body>
         <div id="menubar">
             <button id="btn-newFile" class="menubar-button">New</button>
             <button id="btn-openFile" class="menubar-button">Open</button>
             <button id="btn-saveFile" class="menubar-button">Save</button>
+            <button id="btn-exportFile" class="menubar-button">Export</button>
             &emsp;&emsp;
-            <button id="btn-bold" class="menubar-button">Bold</button>
+            <!-- <button id="btn-bold" class="menubar-button">Bold</button>
             <button id="btn-italic" class="menubar-button">Italic</button>
             <button id="btn-underline" class="menubar-button">Underlined</button>
-            &emsp;&emsp;
+            &emsp;&emsp; -->
             <button id="btn-settings" class="menubar-button">Settings</button>
             <button id="btn-about" class="menubar-button">About</button>
             
             <input style="display:none;" id="dialog-openFile" type="file" accept=".md">
             <input style="display:none;" id="dialog-saveFile" type="file" accept=".md" nwsaveas="New Document.md">
+            <input style="display:none;" id="dialog-exportFile" type="file" accept=".html" nwsaveas="New Document.html">
         </div>
         <div id="seperator">
         </div>
