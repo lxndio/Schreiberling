@@ -83,6 +83,7 @@ pre, code{
   background-color: #F8F8F8;
   border: 1px solid #CCC;
 }
+
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px;}
 pre code { border: 0px !important; background: transparent !important; line-height: 1.3em; }
 code { padding: 0 3px 0 3px; }
@@ -96,6 +97,7 @@ img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
 table { border-collapse: collapse; border-spacing: 0; }
 td, th { vertical-align: top; padding: 4px 10px; border: 1px solid #bbb; }
 tr:nth-child(even) td, tr:nth-child(even) th { background: #eee; }
+
 #menubar {
     position: fixed;
     top: 0;
@@ -103,7 +105,24 @@ tr:nth-child(even) td, tr:nth-child(even) th { background: #eee; }
     left: 4px;
     height: 34px;
     width: 100%;
-    border-bottom: 1px solid #000000;
+}
+
+#seperator {
+	position: fixed;
+	top: 35px;
+	left: 0px;
+	width: 100%;
+	z-index: 1;
+	border-bottom: 1px solid #000000;
+}
+
+#seperator2 {
+	position: fixed;
+	top: 35px;
+	left: 50%;
+	height: 100%;
+	z-index: 1;
+	border-left: 1px solid #000000;
 }
 
 .menubar-button {
@@ -120,13 +139,13 @@ tr:nth-child(even) td, tr:nth-child(even) th { background: #eee; }
 }
 
 #btn-bold {
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 #btn-italic {
-    font-style: italic;
+    /*font-style: italic;*/
 }
 
 #btn-underline {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }

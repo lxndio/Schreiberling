@@ -3,6 +3,7 @@ var editor;
 
 var newFile = true;
 var saved = false;
+var fileName = "New Document.md"
 
 var gui = require("nw.gui");
 var fs = require("fs");
@@ -12,6 +13,8 @@ var languageOverrides = {
     js: 'javascript',
     html: 'xml'
 }
+
+document.title = "Schreiberling - " + fileName;
 
 marked.setOptions({
     highlight: function(code, lang){
