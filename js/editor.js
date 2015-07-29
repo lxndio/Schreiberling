@@ -26,15 +26,32 @@ marked.setOptions({
 function handleNewButton() {
     if (saved) {
         fileEntry = null;
-        saved = true;
+        saved = false;
         newFile = true;
         editor.setValue("");
     } else {
-        handleSaveButton();
-        fileEntry = null;
-        saved = true;
-        newFile = true;
-        editor.setValue("");
+        /*var dialog = $("This document has been modified. Do you want to save changes?").dialog({
+            buttons: {
+                "Yes": function() {
+                    dialog.dialog("close");
+                    handleSaveButton()
+                    fileEntry = null;
+                    saved = true;
+                    newFile = true;
+                    editor.setValue("");
+                },
+                "No": function() {
+                    dialog.dialog("close");
+                    fileEntry = null;
+                    saved = true;
+                    newFile = true;
+                    editor.setValue("");
+                },
+                "Cancel": function() {
+                    dialog.dialog("close");
+                }
+            }
+        });*/
     }
 }
 
@@ -61,7 +78,7 @@ function handleSaveButton() {
 
 function handleExportButton() {
     if (newFile) {
-        // Nothing to export
+        $("#dialog-exportFile").trigger("click");
     } else {
         onChosenFileToExport(fileEntry);
     }
@@ -94,10 +111,10 @@ var onChosenFileToOpen = function(theFileEntry) {
             console.log("Read failed: " + err);
         }
         
-        // Set title
-        /* var title = theFileEntry + " - Markdown Editor";
-        document.getElementById("title").innerHTML = title;
-        document.title = title; */
+        fileName = theFileEntry;
+        saved = true;
+        newFile = false;
+        document.title = "Schreiberling - " + fileName;
         
         editor.setValue(String(data));
         
@@ -117,10 +134,10 @@ var onChosenFileToSave = function(theFileEntry) {
             return;
         }
         
-        // Set title
-        /* var title = theFileEntry + " - Markdown Editor";
-        document.getElementById("title").innerHTML = title;
-        document.title = title; */
+        fileName = theFileEntry;
+        saved = true;
+        newFile = false;
+        document.title = "Schreiberling - " + fileName;
         
         console.log("Write completed.");
         
@@ -147,8 +164,14 @@ function initContextMenu() {
 }
 
 function handleInChange(e) {
+    if (newFile) {
+        newFile = false;
+    }
     if (saved) {
         saved = false;
+    }
+    if (!saved) {
+        document.title = "Schreiberling - *" + fileName;
     }
     update(e);
 }
